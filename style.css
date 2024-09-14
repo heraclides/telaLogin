@@ -1,0 +1,213 @@
+@import url('https://fonts.cdnfonts.com/css/habemfi');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Habemfi', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0ebf8;
+}
+
+.content{
+    border-radius: 10px;
+    background-color: #fcfcfc;
+    width: 60%;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content::before{
+    content: "";
+    position: absolute;
+    background-color: #2e88db;
+    width: 40%;
+    height: 100%;
+}
+
+.login-content{
+    display: flex;
+}
+
+.mens-content{
+    text-align: center;
+    width: 40%;
+    z-index: 1;
+}
+
+.titulo{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.titulo-content{
+    color:#ffff;
+}
+
+.titulo-cad{
+    color: #2e88db;
+
+}
+
+.mensage{
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffff;
+    line-height: 30px;
+}
+
+.mensage-icon{
+    color: #c3c3c3;
+    text-transform: uppercase;
+}
+
+.btn{
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 160px;
+    align-self: center;
+}
+
+.btn-primary{
+    color: #2e88db;
+    background-color: #ffff;
+    transition: 1s;
+}
+
+.btn-primary:hover{
+    color: #ffff;
+    background-color: transparent;
+    border: 2px solid #fcfcfc;
+}
+
+.btn-secundary{
+    color: #fff;
+    background-color: #2e88db;
+    transition: 1s;
+}
+
+.btn-secundary:hover{
+    color: #2e88db;
+    background-color: #fff;
+    border: 2px solid #2e88db;
+}
+
+.cad-content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-media{
+    display: flex;
+    list-style: none;
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.fa-brands{
+    color: #c3c3c3;
+    transition: 0.5s;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.fa-brands:hover{
+    font-size: 35px;
+    color: #2e88db;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    text-align: center;
+}
+
+.input-icon{
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-solid{
+    color: #2e88db;
+}
+
+input{
+    width: 250px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin: 10px;
+    height: 25px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+input:focus{
+    border: 1px solid #2e88db;
+    border-radius: 10px;
+    outline: 2px solid #2e88db;
+    outline-offset: 2px;
+}
+
+.link-senha{
+    padding: 20px;
+    color: #2e88db;
+    font-size: 1rem;
+}
+
+
+.cadastro-content{
+    display: none;
+}
+
+.cadastro-content .cad-content{
+    order: 1;
+}
+
+.cadastro-content .mens-content{
+    order: 2;
+}
+
+.js-login .content::before{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.js-cadastro .login-content{
+    display: none;
+}
+
+.js-cadastro .cadastro-content{
+    display: flex;
+}
+
+.js-cadastro .content::before{
+    left: 60%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
